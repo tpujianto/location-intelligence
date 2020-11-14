@@ -18,6 +18,8 @@ summaryLength = 0
 
     mode = "auto"
 
+    customCSS = "css/custom.css"
+
 # Main menu which appears below site header.
 [[menu.main]]
 name = "Home"
