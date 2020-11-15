@@ -6,20 +6,22 @@ disqus: false
 ---
 
 TO DO:
-- how do you specify a list, etc
-- how do you edit a list, etc
-- cover sets not tuples
+- Provide typical use cases for everything covered
+- Add hyperlinks
+- Add further reading
 
 
+\
 In this first post related to Python programming I am going to start by answering perhaps the most common question asked by individuals new to writing code: "What can I do with Python?". The breadth of things you can do coding Python, is what makes the language typically appear in [top 5 programming languages for developers](https://insights.stackoverflow.com/survey/2019#most-popular-technologies). From creating a machine learning model that predicts building energy consumption, creating a stock trading platform, to developing desktop games, Python is a highly versatile, general purpose programming language used by many of the top global technology firms. This post will go over some of the fundamental concepts inherent to Python, that are essential to fully grasp later more complex tutorials.
 
-There are a few key concepts that are common to all [object oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) languages, variables, operators, and data structures. Thankfully, although these concepts might seem highly abstract at first, they are fairly easy to grasp in the Python language, as opposed to something like C++ or Scala. Each of the aforementioned concepts are outlined in sections below.
+There are a few key concepts that are common to all [object oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) languages, variables, operators, and data structures. Thankfully, although these concepts might seem highly abstract at first, they are fairly easy to grasp in the Python language, as opposed to something like C++ or Scala. Each of the aforementioned concepts are outlined in sections below.<br>
 
 
 ----
 
 ### Variables
 
+\
 A variable in python can be thought of as a bucket to contain data or as a way to attach a name to an object. And attaching a name to an object (or filling a bucket) is done with a simple "=" sign.
 
 ```
@@ -46,8 +48,11 @@ print(a)
 
 In the above example the value of *a* was first changed to 'cover', then to 'book cover', and as Python executes code procedurally from top to bottom, when the print function was made it printed the last value assigned to *a*.
 
-### Data Structors
 
+----
+
+### Data Structures
+\
 In the above section on variables, all the values assigned to *a* were words/text – and in Python this is a type of **data structure** called **strings**. Variables can take any value of within the Python family of data structures. Data Structures are the building blocks from which software is built. There are many types of data structures, to list a few: lists, dictionaries, sets, etc. Below are brief desciptions of what they are and how they differ.
 
 #### Lists
@@ -155,9 +160,54 @@ a.union(b)
 {'timber', 'concrete', 'glass', 'steel', 'brick', 'stone'}
 ```
 
-
+----
 
 ### Operators
+\
+If variables are about assigning values to objects and data structures are the various forms said values can take, operators are methods in Python for manipulating those values. Python operators fall into the following categories: mathematical, comparison, logical, identity, bitwise, and sequence. This section cover discuss mathematical, logical and comparison.
 
-bkosahjihadsfhdsjFHGDJIfhb
-sakjFjSDBFKJhdgsjfgh
+#### Mathematical
+
+Arithmetic operators perform mathematical operations on numbers and symbols. As most of the symbols are familiar to grade school audiences, below are perhaps the less obvious operations.
+
+```
+# Exponentiation: **
+4 ** 2
+16
+
+# Modulus: %
+3 % 2
+1
+
+# Absolute value: abs()
+abs(-10)
+10
+```
+
+#### Comparison
+As the name suggests, comparison operators are used to compare two values. Answering questions like: Are these two values the same? Which value is greater of the two? Are these values different?
+
+```
+# Are these values the same: ==
+x == y
+
+# Are these values not the same: !=
+x != y
+
+# Greater than or equal to: >=
+x >= y
+
+# Less than or equal to: <=
+x <= y
+```
+
+#### Logical
+Logical operators test for truth and check whether specified conditions within a statement have been met. Answering questions like: Are both these statements true?
+
+```
+# Checking whether two statement are true: and
+a == b and x == y
+
+# Check whether one of the statements are true: or
+a == b or x == y
+```
