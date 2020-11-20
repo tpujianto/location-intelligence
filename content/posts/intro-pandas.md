@@ -5,11 +5,7 @@ draft: false
 ---
 
 TO DO:
-- Add contents with links
-- DataFrame
-- Series
-- Loading Data
-- Combining and merging data
+- Add concat function
 
 \
 Pandas is a Python library for doing data analysis. It was built to make manipulating large datasets easy and fast. Initially built for use within the financial sector, it is now widely used throughout the data science and analytics industry. Some argue that it is the sole reason why Python is the de facto data science and machine learning language today.
@@ -113,8 +109,36 @@ read_json('json_file_name')
 \
 The majority of data analysis and machine learning work is in finding, formatting, and joining across datasets. For example, things like satellite data are collected daily, and many provides of earth imagery data will provide it as a collection of hundreds (even thousands) of files. Pandas has functionality that makes it easy to combine data from multiple sources.
 
+Datasets are combined by specifying a common key that is present in both. *Keys* here can be thought of as an attribute, column, or field. For example, two [time series](https://en.wikipedia.org/wiki/Time_series) datasets:
 
+```
+df1 = DataFrame({'column-a': [1, 2, 3, 4],
+                 'key': ['a', 'b', 'c', 'd']})
 
+df2 = DataFrame({'column-b': ['apple', 'pear', 'orange', 'kiwi'],
+                 'key': ['a', 'b', 'c', 'd']})
+
+print(df1)              print(df2)
+    column-a  key           column-b  key
+0   1         a         0   apple     a
+1   2         b         1   pear      b
+2   3         c         2   orange    c
+3   4         d         3   kiwi      d
+```
+
+Can be combined using the **merge()** function and specifying the shared column:
+
+```
+df3 = merge(df1, df2, on='key')
+print(df3)
+    column-a  column-b  key
+0   1         apple     a
+1   2         pear      b
+2   3         orange    c
+3   4         kiwi      d
+```
+
+---
 
 *Further Reading*:
 - [Python For Data Analysis](https://www.cin.ufpe.br/~embat/Python%20for%20Data%20Analysis.pdf)
