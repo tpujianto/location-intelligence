@@ -5,7 +5,6 @@ draft: false
 ---
 
 TO DO:
-- filtering data
 - joining data
 
 
@@ -38,7 +37,9 @@ The table has 5 columns:
 To retrieve all the columns in the table:
 
 ```
-SELECT * FROM geographies.zipcodes LIMIT 10
+SELECT *
+FROM geographies.zipcodes
+LIMIT 10
 ```
 
 The above query asks to retrieve all (**SELECT \***) columns from the *geographies.zipcodes* table. It **LIMIT**s the number of rows returned to 10 – using limits is considered best practice to avoid downloading unneccessaryily large amounts of data.
@@ -46,7 +47,9 @@ The above query asks to retrieve all (**SELECT \***) columns from the *geographi
 To retrieve only the region_id and AWATER columns:
 
 ```
-SELECT region_id, aland FROM geographies.zipcodes LIMIT 10
+SELECT region_id, aland
+FROM geographies.zipcodes
+LIMIT 10
 ```
 
 Which would result in the below table:
@@ -56,7 +59,30 @@ Which would result in the below table:
 53922|1919478
 15027|473269
 
-### Filtering data
+---
 
+### Filtering data
+\
+SQL allows for the ability to filter data, by the values or attributes within a column or set of columns. This is done by adding a **WHERE** clause to the end of a query. For example, to retrieve zip codes that have an area of water above 1,900,000:
+
+```
+SELECT region_id
+FROM geographies.zipcodes
+WHERE awater > 1900000
+```
+
+To add more than one condition, statements can be chained together with **AND** clauses. For example, to retrieve zip codes that have an area of water above 1,900,000 and land area below 3,000,000:
+
+```
+SELECT region_id FROM geographies.zipcodes
+WHERE awater > 1900000
+AND aland < 3000000
+```
+
+---
 
 ### Joining data
+\
+Perhaps the most important concept within SQL and data analysis in general is the process of merging data/tables. In SQL this is known as **JOIN**s. There are various types of joins but they all involve matching rows between tables based on a column found in both. Below is an example of an **INNER JOIN**, one of the most common.
+
+There are two tables, a table of zip codes and a table of 
