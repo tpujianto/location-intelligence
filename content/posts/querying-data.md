@@ -83,6 +83,43 @@ AND aland < 3000000
 
 ### Joining data
 \
-Perhaps the most important concept within SQL and data analysis in general is the process of merging data/tables. In SQL this is known as **JOIN**s. There are various types of joins but they all involve matching rows between tables based on a column found in both. Below is an example of an **INNER JOIN**, one of the most common.
+Perhaps the most important concept within SQL and data analysis in general is the process of merging data/tables. In SQL this is known as **JOIN**s. There are various types of joins but they all involve matching rows between tables based on a common column/attribute. Below is an example of an **INNER JOIN**, one of the most common.
 
-There are two tables, a table of zip codes and a table of 
+Say there are two tables in a database, a table of grocery items called **groceries** and a table of customers called **customers**.
+
+**item_name**|**item\_id**
+:-----:|:-----:
+apples|001
+oranges|002
+plums|004
+onions|010
+cookies|021
+
+---
+
+**customer\_name**|**quantity**|**item\_id**
+:-----:|:-----:|:-----:
+Ashley|2|002
+Ashley|1|021
+Jo|3|001
+Jo|1|004
+Ashley|4|001
+
+An INNER JOIN would be employed to match rows between these tables based on a common column, which in the above case is **item_id**. The SQL syntax is fairly straight forward in that after the aforementioned SELECT and FROM statements, follow an INNER JOIN statement, specifying the table to join and the column to join on.
+
+```
+SELECT item_name, customer_name, quantity
+FROM groceries g
+INNER JOIN customers c
+ON g.item_id = c.item_id
+```
+
+This would result in a new table:
+
+**items**|**customer\_name**|**quantity**
+:-----:|:-----:|:-----:
+apples|Ashley|2
+oranges|Ashley|1
+plums|Jo|3
+onions|Jo|1
+cookies|Ashley|4
