@@ -27,13 +27,13 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "All posts"
+name = "Tutorials"
 url = "/posts"
 weight = 2
 
 [[menu.main]]
 name = "About"
-url = "/about"
+url = "/about/about"
 weight = 3
 
 [[menu.main]]
