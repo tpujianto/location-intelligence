@@ -44,6 +44,46 @@ The next step is to parse the information returned from the HERE API to get the 
 
 ```
 features = r.json()
+```
+
+The above 'features' variable reads the data returned from HERE in JSON format. JSON is a file format common in web development to store text data in (**hiearchical**) human readable form. The output from features should look something like:
+
+```
+{
+  "Response": {
+    "MetaInfo": {
+      "Timestamp": "2020-12-03T04:54:08.020+0000"
+    },
+    "View": [
+      {
+        "_type": "SearchResultsViewType",
+        "ViewId": 0,
+        "Result": [
+          {
+            "Relevance": 0.92,
+            "MatchLevel": "houseNumber",
+            "MatchQuality": {
+              "State": 1,
+              "City": 1,
+              "Street": [
+                0.85
+              ],
+              "HouseNumber": 1,
+              "PostalCode": 1
+            },
+            "MatchType": "interpolated",
+            "Location": {
+              "LocationId": "NT_e1JSr5eaAsWrBHzTuGJn3D_xETN",
+              "LocationType": "address",
+              "DisplayPosition": {
+                "Latitude": 40.74032,
+                "Longitude": -73.99585
+              } ...
+```
+
+We can ignore most of the information returned in the above JSON. We are only interested in tge latitude and longitude values at the bottom. To get these values we have to give the name of the keys, as follows:
+
+```
 view = features['Response']['View'][0]
 res = view['Result'][0]
 loc = res['Location']
