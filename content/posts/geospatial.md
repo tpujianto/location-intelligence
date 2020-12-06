@@ -1,5 +1,5 @@
 ---
-title: "Working with Geospatial Data"
+title: "Geocoding Data"
 date: 2020-11-24T23:47:56-05:00
 draft: false
 ---
@@ -81,7 +81,7 @@ The above 'features' variable reads the data returned from HERE in JSON format. 
               } ...
 ```
 
-We can ignore most of the information returned in the above JSON. We are only interested in tge latitude and longitude values at the bottom. To get these values we have to give the name of the keys, as follows:
+We can ignore most of the information returned in the above JSON. We are only interested in the latitude and longitude values at the bottom. To get these values we have to give the name of the keys, as follows:
 
 ```
 view = features['Response']['View'][0]
@@ -90,3 +90,5 @@ loc = res['Location']
 pt = loc['DisplayPosition']
 lat, lng = pt['Latitude'], pt['Longitude']
 ```
+
+In the last line we are left with two variables lat, lng that together are the coordinates points that lets us locate the address on the globe. 
