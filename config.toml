@@ -37,6 +37,11 @@ url = "/about/about"
 weight = 3
 
 [[menu.main]]
+name = "Resources"
+url = "/resources"
+weight = 3
+
+[[menu.main]]
 name = "Tags"
 url = "/tags"
 weight = 4
