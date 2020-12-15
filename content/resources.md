@@ -12,6 +12,7 @@ This is a non-exhaustive list of useful geospatial datasets around the web. Some
 - [NYC Planning Building Data (PLUTO)](https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page)
 - [NYC Open Data](https://opendata.cityofnewyork.us/)
 - [Buzzfeed News: Data + Code](https://github.com/BuzzFeedNews)
+- [Zillow Home Prices](https://www.zillow.com/research/data/)
 
 
 ### Books
