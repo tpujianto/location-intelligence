@@ -35,3 +35,7 @@ Generally, research is conducted on samples, as collecting data on an entire pop
 ### Inferential vs Descriptive Statistics
 
 Related to samples and populations is the concepts of descriptive vs inferential statistics. Descriptive statistics is what is done when a researcher chooses to describe aspects of a sample or characteristics of a population. For example, stating the average, median, or standard deviation of building heights in the US would be a component of descriptive analysis. If a researcher wants to make conclusions about a larger population from sample data, this is known as inferential statistics. A key goal of inferential statistics is to be able to generalize the results obtained from sample data with some level of confidence.
+
+### Distributions
+
+One of the most fundamental concepts in data and analytics is that of distributions. Given the importance of distributions, there could easily be a post dedicated to the topic. But I refer you to other sources to dig into the details at your own pace. 
