@@ -30,6 +30,8 @@ Knowing the types of variables your data is will dictate the type of analysis or
 
 Another important concept in data and statistics is populations and samples. A population refers to **all** the members of a specific group or category, while a sample is a **subset** drawn from a larger population. For example, if I wanted to study the impact of COVID-19 on adults earning below $50k, I could study every adult earning below that threshold across the entire US, the population, or select 1,000 below that threshold from each state, a sample.
 
-Generally, research is conducted on samples, as collecitng data on an entire population is very expensive.
+Generally, research is conducted on samples, as collecting data on an entire population is very expensive.
 
 ### Inferential vs Descriptive Statistics
+
+Related to samples and populations is the concepts of descriptive vs inferential statistics. Descriptive statistics is what is done when a researcher chooses to describe aspects of a sample or characteristics of a population. For example, stating the average, median, or standard deviation of building heights in the US would be a component of descriptive analysis. If a researcher wants to make conclusions about a larger population from sample data, this is known as inferential statistics. A key goal of inferential statistics is to be able to generalize the results obtained from sample data with some level of confidence.
