@@ -13,6 +13,7 @@ This is a non-exhaustive list of useful geospatial datasets around the web. Some
 - [NYC Open Data](https://opendata.cityofnewyork.us/)
 - [Buzzfeed News: Data + Code](https://github.com/BuzzFeedNews)
 - [Zillow Home Prices](https://www.zillow.com/research/data/)
+- [NY Times COVID-19 Data](https://github.com/nytimes/covid-19-data)
 
 
 ### Books
