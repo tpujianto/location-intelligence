@@ -5,13 +5,6 @@ draft: false
 disqus: false
 ---
 
-TO DO:
-- Provide typical use cases for everything covered
-- Add hyperlinks
-- Add further reading
-- Add contents with links
-
-
 \
 The most common question asked by individuals new to writing code is: "What can I do with Python?". The breadth of things you can do coding Python is what makes the language typically appear in [top 5 programming languages lists](https://insights.stackoverflow.com/survey/2019#most-popular-technologies). From creating a machine learning model that predicts building energy consumption, creating a stock trading platform, to developing desktop games, Python is a highly versatile, general purpose programming language used by many of the top global technology firms. This post will go over some of the fundamental concepts of Python, that are essential for understanding later, more complex tutorials.
 
@@ -64,7 +57,7 @@ Lists are perhaps one of the most widely used data structures, particularly for 
 a = [1, 5, 7, 100]
 ```
 
-Here *a* was assigned four numeric values. They are structured in a way that makes the values inside easily accessible later on in code. Lists are created using squared brackets *[]* or via the *list()* function.
+Lists are created using squared brackets *[]* or via the *list()* function and everything inside a list is separated by commas. Above *a* was assigned four numeric values.
 
 ```
 print(a[0])
@@ -73,9 +66,9 @@ print(a[1])
 5
 ```
 
-Remembering that print can be used to reveal values inside a variable, in the above code *[0]* after *a* is a way to access the first element within *a*. If that number was changed to *[1]* it would print the second element in the list assigned to *a*. Lists are very powerful which we will see in later tutorials.
+Lists are structured in a way that makes the values inside easily retrievable later on in code. Items in lists are ordered by indexes, a series of ordered numbers starting from 0. In the above example, putting *[0]* after *a* is a way to access the first element within *a*. If that number was changed to *[1]* it would print the second element in the list assigned to *a*. This operation is known as indexing, as it involves retrieving values based on their order in the list, their index.
 
-There are many operations to manipulate the contents of a list:
+There are many operations to manipulate the contents of a list. The below example demonstrates how to add items to the end of lists, how to reverse the order of a list, and how to discover the length of a list (the number of items in a list).
 
 ```
 # Adding items to a list
@@ -92,17 +85,17 @@ len(a)
 5
 ```
 
-In the above code, pound signs (#) were used to add comments. Comments in Python are parts of the code not executed my the computer. It is usually used by developers to add human readable information to future readers.
+In the above code, pound signs (#) were used to add comments. Comments in Python are parts of the code not executed my the computer. It is usually used by developers to add human readable notes to future readers.
 
 #### Dictionaries
 
-Dictionaries are another data type in Python, that are used to hold, what is called, key-value pairs. Which means, you can develop a concise form to consistent name a collection of objects.
+Dictionaries are another data type in Python that are used to hold what are called, key-value pairs. At the simplest level, a key-value pair is just two values, one of which you have designated to be a "key" and the other you have designated to be the "value".
 
 ```
 a = {'building_name': 'Chrysler', 'address': '405 Lexington Av', 'height': 274}
 ```
 
-In this example, a dictionary is defined to hold a series of attributes related to a single book, its title, type, and weight. Dictionaries are created using curly brackets *{}* or via the *dict()* function.
+In this example, we use a dictionary (key-value pairs) to define the attributes of a building – it's address, height, and name. Dictionaries are created using curly brackets *{}* or via the *dict()* function.
 
 To retrieve an attribute value is as simple as calling the specific *key*.
 
@@ -121,9 +114,9 @@ Where dictionaries really shine however, is being able to hold attributes for a 
 }
 ```
 
-Here the previous dictionary of a single book was extended to hold attributes for multiple.
+Here the previous dictionary of a single building was extended to hold attributes for multiple.
 
-Dictionaries also allow for heiarchical (or nested) structuring of data.
+Dictionaries also allow for hierarchical (or nested) structuring of data.
 
 ```
 {
@@ -138,7 +131,7 @@ Here the *key* city is given the value 'New York' which in turn holds a dictiona
 
 #### Sets
 
-Another useful data structure are sets – which have very close similarities to the mathematical notion of a [set](https://en.wikipedia.org/wiki/Set_(mathematics)). Sets in Python are unordered collection of objects. But unlike lists, sets only contain distinct objects without / have no duplicate elements. Sets are created with curly brackets or with the *set()* function.
+Another useful data structure are sets – which have very close similarities to the mathematical notion of a [set](https://en.wikipedia.org/wiki/Set_(mathematics)). Sets in Python are unordered collection of objects, but unlike lists, sets only contain distinct objects. Sets are created with curly brackets or with the *set()* function.
 
 
 ```
@@ -165,7 +158,7 @@ a.union(b)
 
 ### Operators
 \
-If variables are about assigning values to objects and data structures are the various forms said values can take, operators are methods in Python for manipulating those values. Python operators fall into the following categories: mathematical, comparison, logical, identity, bitwise, and sequence. This section cover discuss mathematical, logical and comparison.
+If variables are about assigning values to objects and data structures are the various forms said values can take, operators are methods in Python for manipulating those values. Python operators fall into the following categories: mathematical, comparison, logical, identity, bitwise, and sequence. This section covers mathematical, logical and comparison.
 
 #### Mathematical
 
