@@ -1,29 +1,25 @@
 ---
 title: "Geocoding Data"
-date: 2020-11-24T23:47:56-05:00
+date: 2020-12-26T23:47:56-05:00
 draft: false
 ---
 
-TO DO:
-- geocoding
-- common geographic units
-- spatial disaggregation
 
+\
+Before diving into the nuts and bolts of working with geospatial data and geocoding, it is necessary to clarify the differences between the terms geospatial and GIS. GIS is unified software system that stores geographic information in layers. While the term geospatial is a broader category of the technology and associated data that deals with geography. Geosptial data can come in the form of satellite images, lidar point clouds, polygons and coordinates, to name just a few. The one constant is that every datum, will have some way to reference a point or region on the Earth's surface.
 
-Before diving into the nuts and bolts of working with geospatial data, it is necessary to clarify the differences between the terms geospatial and GIS. GIS unified software system that stores geographic information i layers. Geospatial on the other hand is a broader category of the technology and associated data that deals with geography. Geosptial data can come in the form of satellite images, lidar point clouds, polygons and coordinates, to name just a few. The one constant is that every datum, will have some way to reference a point in space and or time.
-
-The technologies covered so far, namely Python and SQL, are perfectly capable of allowing analysis and development of geospatial data and tools. The concepts that this post will cover are geocoding, and reverse geocoding, spatial aggregation and disaggregation, and geospatial specific libraries for Python.
+Geocoding is one of the most common tasks researchers working with geospatial data do. It is the process of taking a textual representation of an address, and using software to return geographic coordinates. This post explores the basics of geocoding in Python using the HERE API.
 
 ---
 
 ### Geocoding
 
 
-[Geocoding](https://en.wikipedia.org/wiki/Geocoding) is the process of taking a textual representation of an address, and using software to return geographic coordinates. For example, taking "2920 Broadway, New York, NY 10027" and getting a latitude longitude pair = 40.807075 -73.964432. Reverse geocoding, as the name suggests, is doing the reverse – so taking 40.807075 -73.964432 and getting back "2920 Broadway, New York, NY 10027". It is useful for situations where you have a places address, but would like to locate it geographically, or when you have to merge to datasets, with differing geographic information. For example, you know latitude and longitude of a certain grocery store, but would like to determine the zip code it is in.
+[Geocoding](https://en.wikipedia.org/wiki/Geocoding) is the process of taking a textual representation of an address, and using software to return geographic coordinates. For example, taking "2920 Broadway, New York, NY 10027" and getting a latitude longitude pair = 40.807075 -73.964432. Reverse geocoding, as the name suggests, is doing the reverse – so taking 40.807075 -73.964432 and getting back "2920 Broadway, New York, NY 10027". It is useful for situations where you have a places address but would like to locate it geographically, or when you have to merge to datasets with differing geographic information. For example, you know latitude and longitude of a certain grocery store, but would like to determine the zip code it is in.
 
-There are number of online services / APIs to help with geocoding. Most of them require some sort of sign-up. This course will rely heavily on the [HERE API](https://www.here.com/) for geocoding as they are generous with access limits.
+There are number of online services / APIs to help with geocoding. Most of them require some sort of sign-up. This post will utilize the [HERE API](https://www.here.com/) for geocoding as they are generous with access limits.
 
-The first step in geocoding with HERE is to [sign-up](https://developer.here.com/sign-up?create=Freemium-Basic&keepState=true&step=account) for an account to obtain an App ID and App Code – think of these as credentials so HERE can identify who is connecting. Store the App ID and Code in a safe place as they will come in handy in later tutorials.
+The first step in geocoding with HERE is to [sign-up](https://developer.here.com/sign-up?create=Freemium-Basic&keepState=true&step=account) for an account to obtain an App ID and App Code – think of these as credentials so HERE can identify who is connecting to their system. Store the App ID and Code in a safe place as they will come in handy in later tutorials.
 
 The next step is to write the code that connects with the HERE API over HTTP. For this example we will search for information on an address in NYC. Python has a great tool to connect to websites called Requests – it lets you specify a website url and then download certain data from the page.
 
@@ -91,4 +87,4 @@ pt = loc['DisplayPosition']
 lat, lng = pt['Latitude'], pt['Longitude']
 ```
 
-In the last line we are left with two variables lat, lng that together are the coordinates points that lets us locate the address on the globe. 
+In the last line we are left with two variables lat, lng that together are the coordinates points that lets us locate the address on the globe.

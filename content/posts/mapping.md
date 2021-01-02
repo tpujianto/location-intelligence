@@ -1,11 +1,13 @@
 ---
 title: "Mapping data in Python"
+date: 2020-12-25T23:47:56-05:00
 draft: false
 ---
 
 
-
-This tutorial will demonstrate how to create both static and interactive maps in Python using GeoPandas and the Folium libraries. *Jupyter Notebook here*
+\
+This tutorial will demonstrate how to create both static and interactive maps in Python using GeoPandas and the Folium libraries.
+[*Jupyter Notebook here*](https://github.com/carlobailey/location-intelligence/blob/main/_notebooks/mapping.ipynb)
 
 
 Let's start by importing all the necessary libraries we'll need:
@@ -28,7 +30,7 @@ import numpy as np
 import os
 ```
 
-In the next step we'll need to connect to the class database that lives on AWS. This database has all of the geographic geometry that we'll plot in Python.
+In the next step we'll need to connect to the class database that lives on AWS (or the folders in the class G-drive). This database has all of the geographic geometry that we'll plot in Python.
 
 ```
 conn = pg.connect(
