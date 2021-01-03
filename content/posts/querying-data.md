@@ -1,7 +1,7 @@
 ---
 title: "Querying Data with SQL"
 date: 2020-11-22T17:16:09-05:00
-draft: false
+draft: true
 ---
 
 TO DO:
