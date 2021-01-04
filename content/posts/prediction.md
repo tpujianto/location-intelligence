@@ -1,12 +1,12 @@
 ---
 title: "Predictive Modelling (Regression)"
-date: 2020-12-23T23:21:50-05:00
+date: 2020-12-22T23:21:50-05:00
 draft: false
 ---
 
 \
 This tutorial demonstrates how to utilize NYC Open data on [building energy & water usage](https://data.cityofnewyork.us/Environment/Energy-and-Water-Data-Disclosure-for-Local-Law-84-/qb3v-bbre) to predict city wide building performance. It will introduce fundamental concepts of predictive modelling: feature engineering, training a model, and evaluating model performance.
-Complete code in [*Jupyter notebook here*]()
+Complete code in [*Jupyter notebook here*](https://github.com/carlobailey/location-intelligence/blob/main/_notebooks/energy_prediction.ipynb)
 
 We will use variables from NYC PLUTO and [building footprints](https://data.cityofnewyork.us/Housing-Development/Building-Footprints/nqwf-w8eh) datasets to generate features and predict a building's annual energy consumption.
 
