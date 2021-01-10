@@ -27,24 +27,24 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Tutorials"
-url = "/posts"
+name = "About"
+url = "/about/about"
 weight = 2
 
 [[menu.main]]
-name = "About"
-url = "/about/about"
+name = "Tutorials"
+url = "/posts"
 weight = 3
 
 [[menu.main]]
 name = "Resources"
 url = "/resources"
-weight = 3
+weight = 4
 
 [[menu.main]]
-name = "Tags"
-url = "/tags"
-weight = 4
+name = "Assignments"
+url = "/assignments"
+weight = 5
 
 
 # Social media links which shows up on site header.
