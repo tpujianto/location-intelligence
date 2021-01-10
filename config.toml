@@ -1,4 +1,4 @@
-baseURL = "http://placedata.net/"
+baseURL = "https://www.placedata.net/"
 languageCode = "en-us"
 title = "Location Intelligence"
 theme="ezhil"
