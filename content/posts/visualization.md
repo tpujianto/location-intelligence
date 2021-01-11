@@ -1,11 +1,12 @@
 ---
 title: "Interactive data visualization with Python"
+date: 2020-12-24T09:47:56-05:00
 draft: false
 ---
 
 
 \
-This tutorial builds upon previous posts on data analysis and mapping by demonstrating how to do simple interactice charts in Python. For this example we will use NYC's [tree census dataset](https://data.cityofnewyork.us/widgets/uvpi-gqnh), using the SODA API to access. Plotting will be done with Plotly, an open source visualization tool for Python.
+This tutorial builds upon previous posts on data analysis and mapping by demonstrating how to do simple interactive charts in Python. For this example we will use NYC's [tree census dataset](https://data.cityofnewyork.us/widgets/uvpi-gqnh), using the SODA API to access. Plotting will be done with Plotly, an open source visualization tool for Python.
 
 Let's start by importing all the necessary libraries:
 
@@ -18,7 +19,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 ```
 
-Next we can use the Socrata Python tool to download the city tree data. Below we specify the soda developer token and the location of the data. And by default Socrata limits the amount of data that can be downloaded to 20k rows, we uppdate that limit to 600k, as thats approximately how many rows are in the tree census.
+Next we can use the Socrata Python tool to download the city tree data. Below we specify the soda developer token and the location of the data. By default, Socrata limits the amount of data that can be downloaded to 20k rows, below we add the limit argument and this update to 600k – approximately the number of rows the tree census.
 
 ```
 client = Socrata("data.cityofnewyork.us", os.environ['nyc_soda_cuny_token'])
@@ -26,7 +27,7 @@ results = client.get("uvpi-gqnh", limit=600000)
 trees = pd.DataFrame.from_records(results)
 ```
 
-Usually all columns in datasets downloaded from Socrata is of a string / object type. Below we specify the numeric columns as either integers or floats respectively.
+Usually all columns in datasets downloaded from Socrata are of a string / object type. Below we specify the numeric columns to be either integers or floats.
 
 ```
 cols_int = ['tree_dbh', 'stump_diam']
@@ -40,7 +41,7 @@ for column in cols_float:
 
 ### Simple Bar Chart
 
-The first data point we'll visualize is the amount of trees in each of the five boroughs in NYC. There are many ways to do this with Pandas – below we use the **value_counts()** method on a Series object. This method counts the occurences elements in a DataFrame, and returns a new Series object where the element names are the index and the values are the amount.
+The first data point we'll visualize is the amount of trees in each of the five boroughs in NYC. There are many ways to do this with Pandas – below we use the **value_counts()** method on a Series object. This method counts the occurrences elements in a DataFrame, and returns a new Series object where the element names are the index and the values are the amount.
 
 ```
 trees['boroname'].value_counts()
@@ -78,9 +79,9 @@ Bronx |78593
 Manhattan |48604
 
 
-Now we are ready to pass the data to Plotly for visualizing.
+Now we are ready to pass the data to Plotly for visualization.
 
-Below are two of the main drivers behind nearly all Plotly visuals – a **Figure** object and a graph type, in this case **Bar**. We place the Bar object inside the figure and specify the X and Y columns by passing the columns of our DataFrame above.
+Two of the main drivers behind nearly all Plotly visuals are the **Figure** object and a *graph type*, in this case **Bar**. To create a bar chart we place the Bar object inside the figure and specify the X and Y columns by passing the columns of our DataFrame above.
 
 Plotly by default always shows a control bar at the top each plot – below we turn this off by passing a dictionary to the *config* argument.
 
@@ -96,15 +97,16 @@ fig.show(
 )
 ```
 
-CHART HERE
+{{< bar_embed-1 >}}
 
-The resulting graph above is raw and begs for a little customization. Customizing graphs is easy with Plotly with a **Layout** object. Below we specify a new background color (in RGB), a title, and set the width of the plot by giving the left + right margins. We also change the color of the bars themselves in the Bar object.
+The resulting graph above is raw and begs for a little customization. Customizing graphs is easy with Plotly's **Layout** object. Below we specify a new background color (in RGB), a title, and set the width to 500 pixels. We also change the color of the bars themselves in the Bar object.
 
 ```
 layout = go.Layout(
     plot_bgcolor='rgba(255,255,255,1)',
     title='Number of trees in each borough',
-    margin=dict(l=500, r=500)
+    autosize=False,
+    width=500
 )
 
 fig = go.Figure(
@@ -120,11 +122,11 @@ fig.show(
 )
 ```
 
-CHART HERE
+{{< bar_embed-2 >}}
 
 ### Stacked Bar Charts
 
-Next we'll use the **groupby()** method in Pandas to count the number of healthy trees in each borough. Groupby is one of the most powerful concepts within Pandas, allowing researchers to group DataFrame according to a specific (or multiple) entities, in this case Boroughs, and then aggregate values within groups. For example, below we group our DataFrame by boroname and (tree) health, and then count the occurences of good, fair, and poor trees within each boro.
+Next to demonstrate how to create a stacked bar chart, we'll use the **groupby()** method in Pandas to count the number of healthy trees in each borough. Groupby is one of the most powerful concepts within Pandas, allowing researchers to group DataFrames according to a specific (or multiple) entities, in this case Boroughs and health condition. Once grouped, Pandas allows you to run any number of aggregation functions on the resulting groups. For example, below we group our DataFrame by boroname and tree health, and then count the occurrences of good, fair, and poor trees within each borough.
 
 ```
 trees.groupby(['boroname', 'health']).agg({'tree_id':'count'})
@@ -132,7 +134,7 @@ trees.groupby(['boroname', 'health']).agg({'tree_id':'count'})
 
 
 
-As we did previously, below we convert the above group by result into a dataframe and change the column names.
+As we did previously, below we convert the above groupby result into a dataframe and change the column names.
 
 ```
 boro_health = trees.groupby(['boroname', 'health'])\
@@ -150,7 +152,7 @@ Bronx|Poor|2774
 Brooklyn|Fair|20298
 Brooklyn|Good|118480
 
-Now we're ready to feed the above dataframe into the Plotly **Bar** object. However, to create a stacked bar chart, we need to feed the data into plotly as seperate dataframes for each group. Below we filter the data by the health condition and create 3 seperate Bar objects within the Figure, and specify the *barmode* argument as **stack**.
+Now we're ready to feed the above dataframe into the Plotly **Bar** object again. However, to create a stacked bar chart, we need to feed the data into plotly as separate dataframes for each group. Below we filter the data by the health condition and create 3 separate Bar objects within the Figure, and specify the *barmode* argument as **stack**.
 
 ```
 fig = go.Figure(
@@ -174,7 +176,7 @@ fig.show(
 )
 ```
 
-CHART HERE
+{{< bar_embed-3 >}}
 
 We can improve our code above slightly by using list comprehension. Rather than manually specifying a dataframe for each of the 3 health conditions, we can use list comprehension to do this for us automatically.
 
@@ -203,11 +205,11 @@ fig.show(
 )
 ```
 
-CHART HERE
+{{< bar_embed-4 >}}
 
 ### Scatter Plots
 
-For the final example we visualize 2 variables at the same time and at a more granular geographic unit, zip code. We use the groupby method once again to gather: how many trees are alive in each zipcode, and how many trees are in poor health condition.
+For the final example we'll create a scatter plot to visualize two variables simultaneously and at a more granular geographic unit, zip code. We use the groupby method once again to gather: how many trees are alive in each zipcode, and how many trees are in poor health condition.
 
 ```
 zip_status = trees.groupby(['boroname', 'zipcode', 'status'])\
@@ -256,7 +258,7 @@ fig.show(
 )
 ```
 
-CHART HERE
+{{< scatter_embed-1 >}}
 
 ### Exporting charts
 
