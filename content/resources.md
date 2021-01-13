@@ -1,5 +1,6 @@
 ---
 title: "Resources"
+date: 2020-12-27T23:21:50-05:00
 draft: false
 ---
 
@@ -21,3 +22,10 @@ This is a non-exhaustive list of useful geospatial datasets around the web. Some
 - [Python for Data Analysis](https://www.oreilly.com/library/view/python-for-data/9781449323592/) ([free pdf version](https://bedford-computing.co.uk/learning/wp-content/uploads/2015/10/Python-for-Data-Analysis.pdf))
 - [Think Python](https://greenteapress.com/wp/think-python/)
 - [Think Stats](https://greenteapress.com/thinkstats/)
+
+### Online Courses
+
+- [Programming for Everybody (Getting Started with Python)](https://www.coursera.org/learn/python?ranMID=40328&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-Cmy0rFJkSF0yVR5.7MyHdw&siteID=JVFxdTr9V80-Cmy0rFJkSF0yVR5.7MyHdw&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=JVFxdTr9V80): this is a highly rated Coursera course that can be audited for free.
+- [Introduction To Python Programming (Udemy)](https://www.udemy.com/course/pythonforbeginnersintro/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-C__VTAdLqz29IkcSmGg0XA&utm_medium=udemyads&utm_source=aff-campaign)
+- [Python for Absolute Beginners! (Udemy)](https://www.udemy.com/course/free-python/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-JUf6iMmCL5WaNbUhwxJIIw&utm_medium=udemyads&utm_source=aff-campaign)
+- [Codecademy](https://www.codecademy.com/learn/learn-python)
