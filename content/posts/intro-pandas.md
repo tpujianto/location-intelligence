@@ -14,6 +14,9 @@ This post will cover the basic concepts of DataFrames, Series, loading data, and
 
 ---
 
+![missing image](img/dataframe.png "Title")
+
+
 ### DataFrame
 \
 DataFrames can be thought of as spreadsheets or tables that contain rows and columns of data. Diving into the nuts and bolts of DataFrames is beyond the scope of this tutorial, but one thing to note is the idea of vectorization with Numpy and Pandas. Vectorization allows operations on large collections of values almost instantaneously without the need for running loops. And it is one of the main reasons Pandas is as fast as it is.

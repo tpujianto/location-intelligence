@@ -5,6 +5,10 @@ draft: false
 disqus: false
 ---
 
+![missing image](img/python_logo.png "missing image")
+
+
+
 \
 The most common question asked by individuals new to writing code is: "What can I do with Python?". The breadth of things you can do coding Python is what makes the language typically appear in [top 5 programming languages lists](https://insights.stackoverflow.com/survey/2019#most-popular-technologies). From creating a machine learning model that predicts building energy consumption, creating a stock trading platform, to developing desktop games, Python is a highly versatile, general purpose programming language used by many of the top global technology firms. This post will go over some of the fundamental concepts of Python, that are essential for understanding later, more complex tutorials.
 

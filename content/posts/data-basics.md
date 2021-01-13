@@ -22,6 +22,9 @@ Knowing the types of variables in your data dictates the type of analysis or mod
 
 ### Populations vs Samples
 
+
+![missing image](img/Simple_random_sampling.PNG "Title")
+
 Another important concept in data and statistics is populations and samples. A population refers to **all** the members of a specific group or category, while a sample is a **subset** drawn from a larger population. For example, if one wanted to study the impact of COVID-19 on adults earning below $50k, you could study every adult earning below that threshold across the entire US, the population, or select 1,000 below that threshold from each state, a sample.
 
 Generally, research is conducted on samples, as collecting data on an entire population is very expensive.
