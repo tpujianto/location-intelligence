@@ -4,6 +4,7 @@ date: 2020-12-26T23:47:56-05:00
 draft: false
 ---
 
+![missing image](img/geocode.jpg "Title")
 
 \
 Before diving into the nuts and bolts of working with geospatial data and geocoding, it is necessary to clarify the differences between the terms geospatial and GIS. GIS is unified software system that stores geographic information in layers. While the term geospatial is a broader category of the technology and associated data that deals with geography. Geosptial data can come in the form of satellite images, lidar point clouds, polygons and coordinates, to name just a few. The one constant is that every datum, will have some way to reference a point or region on the Earth's surface.
