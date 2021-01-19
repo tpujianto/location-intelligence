@@ -1,6 +1,6 @@
 ---
 title: "Assignments"
-date: 2021-01-19T20:27:23-05:00
+date: 2021-01-17T20:27:23-05:00
 draft: false
 ---
 
@@ -9,46 +9,42 @@ draft: false
 
 
 #### Purpose
-The purpose of this assignment is to have you start thinking about a research agenda for your final project. One of the hardest things about research and data science is not any of the technical aspects (getting the data, analysis, making visualizations, etc), but is asking the right questions. You can have all the data in the world and all the time + resources to explore it, but if you do not know how to ask interesting questions, you will not be able to produce novel insights, actionable findings or a new body of knowledge. In this assignment you will be tasked with coming up with a research question(s) that you want to answer over the next few weeks/months, gather existing research on the topic, and present with Reveal.js.
+The purpose of this assignment is to get you thinking about a research agenda for your final project. One of the hardest things about research and data science is finding the right questions to ask with data. You can have all the data in the world, with unlimited time and resources, but if you do not know how to ask interesting questions, you will not be able to produce novel insights, actionable findings or a new body of knowledge. In this assignment you will be tasked with coming up with a research question(s) that you want to answer over the next few weeks/months, gather existing research on the topic, and present it with Reveal.js.
 
-Reveal.js is an open-source presentation framework that enables you to create interactive, highly customisable presentations on the web. Alongside doing visualization and analysis in Python, you will be consolidating your efforts this semester in Reveal.js. This assignment aims to get you familiar with the framework.
+[Reveal.js](https://revealjs.com/) is an open-source presentation framework that enables you to create interactive, highly customizable presentations on the web. Alongside doing visualization and analysis in Python, you will be consolidating your efforts this semester in Reveal.js. This assignment aims to get you familiar with the framework.
 
 #### Task
-Define a broad topic or area of interest related to the built environment or design authorities. For example property ownership, zoning, energy usage etc.
-Why are you interested in this topic?
-Narrow it down to an area within the above broad topic that you wish to explore.
-What are the ways you think this topic affects the built environment?
-Write your proposed research question, based on the narrowing down of the above topic areas.
-What do you hope to uncover?
+Define a broad topic or area of interest related to the built environment or location. For example property ownership, zoning, energy usage, retailers, tax credits, etc. Why are you interested in this topic? Narrow it down further to an area you wish to explore. What are the ways you think this topic affects the built environment and location? Articulate your proposed research question, and find 2-3 examples of academic or industry research exploring a similar issue.
 
-*Example: 1*
-Broad Topic
+
+#### Example
+
+*Broad Topic*
 - Real Estate Financing
-Narrow Area
+
+*Narrow Area*
 - Public Infrastructure and Land Value
-Research Question
+
+*Research Question*
 - How does the development of public infrastructure projects affect house prices?
 
-*Example: 2*
-Broad Topic
-- Human Health
-Narrow Area
-- Food Access and Neighborhood Amenities
-Research Question
-- How does the availability of healthy foods in neighborhoods influence community BMI?
+*Similar research*
 
-*Example: 3*
-Broad Topic
-- Local Economy
-Narrow Area
-- Multinational Chains and Small Business
-Research Question
-- How can the built environment support or retard business growth of each type? How does it affect local employment?
-
-Resource:
-[How to formulate a research question](https://ocw.mit.edu/courses/comparative-media-studies-writing/21w-035-science-writing-and-new-media-communicating-science-to-the-public-fall-2016/communication-experiments/sessions-9-21/formulating-a-research-question/)
+- [A Smart Commons](https://provocations.darkmatterlabs.org/a-smart-commons-528f4e53cec2)
 
 ---
+
+Resources:
+- [Google Scholar](https://scholar.google.com/) research portal to help you find similar research
+- [arXiv](https://arxiv.org/) *open* research portal to help you find similar research
+- [How to formulate a research question](https://ocw.mit.edu/courses/comparative-media-studies-writing/21w-035-science-writing-and-new-media-communicating-science-to-the-public-fall-2016/communication-experiments/sessions-9-21/formulating-a-research-question/)
+
+---
+---
+---
+---
+-----
+
 
 
 ## Week-1
