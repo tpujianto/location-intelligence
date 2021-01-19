@@ -4,7 +4,7 @@ date: 2020-12-21T23:21:50-05:00
 draft: false
 ---
 
-
+\
 [Reveal.js](https://revealjs.com/) is an open-source presentation framework that enables you to create interactive, highly customizable presentations on the web. For this tutorial we will use the Reveal framework within the context of a static site generator called Hugo! Using Hugo and Reveal together allows us to publish our work to the web for free.
 
 ### Create Github Repo
@@ -116,7 +116,7 @@ An example of how your site should look locally is [here](https://carlobailey.gi
 
 ### Customization
 
-In Hugo files like the *_index.md* above, all content below and above the '+++' symbols are the meta-data that is used to customize and set parameters of your website. For example, to change the theme add the below content to the *_index.md* file above the last '+++' symbol.
+In Hugo files like the *_index.md* above, all content below and above the '+++' symbols are the meta-data that is used to customize and set parameters of your website. For example, to change the *theme* of the presentation add the below content to the *_index.md* file above the last '+++' symbol.
 
 ```
 [reveal_hugo]
@@ -134,4 +134,6 @@ theme = "moon"
 +++
 ```
 
-To see more customization options see [here](https://themes.gohugo.io/theme/reveal-hugo/#/30)
+To see more theme and other customization options refer to the [documentation](https://revealjs.com/themes/)
+
+There is also a demonstration of how to add customization options in Hugo [here](https://themes.gohugo.io/theme/reveal-hugo/#/30)
