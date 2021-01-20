@@ -11,6 +11,12 @@ draft: false
 
 First create a github repository (commonly referred to as a 'repo') – following the instructions outlined [here](https://docs.github.com/en/github/getting-started-with-github/create-a-repo). Ensure the visibility of the repo is set to *public*.
 
+### Install Github
+
+Install git on your laptop – git allows you to control github from the terminal or command prompt.
+
+- For windows follow the "Install Git on Windows" instructions [here](https://github.com/git-guides/install-git#install-git-on-windows). Select the *Git Bash* option during installation.
+- Most macs already have git installed. But if you don't follow these [instructions](https://github.com/git-guides/install-git#install-git-on-windows).
 
 ### Cloning a repo
 
