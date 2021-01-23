@@ -13,7 +13,8 @@ disqus: false
 The most common question asked by individuals new to writing code is: "What can I do with Python?". The breadth of things you can do coding Python is what makes the language typically appear in [top 5 programming languages lists](https://insights.stackoverflow.com/survey/2019#most-popular-technologies). From creating a machine learning model that predicts building energy consumption, creating a stock trading platform, to developing desktop games, Python is a highly versatile, general purpose programming language used by many of the top global technology firms. This post will go over some of the fundamental concepts of Python, that are essential for understanding later, more complex tutorials.
 
 This post will go through variables, operators, and data structures, concepts that are common to all [object oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) languages. Although these concepts might seem abstract at first, they are fairly easy to grasp in the Python language, as opposed to something like C++ or Scala.
-<br>
+
+The Jupyter Notebook of this tutorial lives [here](https://github.com/carlobailey/location-intelligence/blob/main/_notebooks/jupyter_intro.ipynb)
 
 
 ----
