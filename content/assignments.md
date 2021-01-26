@@ -4,6 +4,27 @@ date: 2021-01-17T20:27:23-05:00
 draft: false
 ---
 
+## Week-3:
+### Data manipulation with Pandas
+
+#### Purpose
+The goal of this assignment is to get you coding in Python and familiar with the Pandas library. You are tasked with locating a dataset on your chosen research topic and load the data in Python using Pandas. Once the data is loaded into Python you must describe the data using basic statistics such as averages, medians, summing, etc. For example, if your topic is NYC housing, then you could download the building data from the NYC Urban Planning department (PLUTO), load it into Pandas and find out the average building height in NYC or the total square footage in Manhattan.
+
+There are many interesting datasets online and I encourage you to search the internet to locate something interesting. Most research is only as good as the available data.
+
+---
+
+Resources:
+- You may find the datasets linked in the [resource](https://www.placedata.net/resources/) section of this site useful.
+- Refer to the intro [tutorials](https://www.placedata.net/posts/) or [notebooks](https://github.com/carlobailey/location-intelligence/tree/main/_notebooks) on Python, Pandas, and Data.
+
+---
+---
+---
+---
+-----
+
+
 ## Week-2:
 ### Define a research agenda and create a Reveal.js presentation
 

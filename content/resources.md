@@ -4,10 +4,15 @@ date: 2020-12-27T23:21:50-05:00
 draft: false
 ---
 
+### Class Repository
+- [Jupyter notebooks](https://github.com/carlobailey/location-intelligence/tree/main/_notebooks)
+
 ### Datasets
 
-This is a non-exhaustive list of useful geospatial datasets around the web. Some of this data is accessible via the class AWS database – ask instructor for access.
+This is a non-exhaustive list of useful geospatial datasets around the web. Some of this data is accessible via the class G-drive – ask instructor for access.
 
+- [Google's Dataset Search](https://datasetsearch.research.google.com/)
+- [Kaggle datasets](https://www.kaggle.com/datasets)
 - [American Community Survey / US Census](https://data.census.gov/cedsci/)
 - [Bureau Of Labor Statistics](https://www.bls.gov/bls/proghome.htm)
 - [NYC Planning Building Data (PLUTO)](https://www1.nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page)
@@ -16,6 +21,7 @@ This is a non-exhaustive list of useful geospatial datasets around the web. Some
 - [Zillow Home Prices](https://www.zillow.com/research/data/)
 - [NY Times COVID-19 Data](https://github.com/nytimes/covid-19-data)
 - [EU Urban Data Platform](https://urban.jrc.ec.europa.eu/#/en)
+- [Data is Plural Archive](https://dataset-finder.netlify.app/?utm_campaign=Data_Elixir&utm_source=Data_Elixir_318)
 
 
 ### Books
