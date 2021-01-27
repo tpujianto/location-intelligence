@@ -11,6 +11,7 @@ draft: false
 
 This is a non-exhaustive list of useful geospatial datasets around the web. Some of this data is accessible via the class G-drive – ask instructor for access.
 
+- [Open Geospatial Datasets for Education](https://github.com/andrea-ballatore/open-geo-data-education)
 - [Google's Dataset Search](https://datasetsearch.research.google.com/)
 - [Kaggle datasets](https://www.kaggle.com/datasets)
 - [American Community Survey / US Census](https://data.census.gov/cedsci/)
