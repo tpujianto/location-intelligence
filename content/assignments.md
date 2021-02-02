@@ -4,6 +4,40 @@ date: 2021-01-17T20:27:23-05:00
 draft: false
 ---
 
+## Week-4:
+### Data analysis with Pandas
+This week's assignment expands on the use of Pandas, requiring you to do a descriptive analysis of data within your chosen research area. By next week's class, you are to find an interesting dataset(s) and ask a series of probing questions to surface basic insights. The output of the analysis is not important at this stage, what is important is getting comfortable with data analysis + Pandas + Python. However, you should summarize your findings in a Reveal.js presentation.
+
+Questions to ask yourself when choosing your dataset:
+- How does this relate to my topic?
+- Is this data trustworthy? Is it meaningful?
+- Is it at the right granularity?
+- Is the dataset structured in a useful format?
+
+With your chosen dataset, you are to pick two or more variables and depending on the *data type* of the variables answer the following questions:
+- If the data type is numeric: surface the median, minimum, maximum, and standard deviation of the variable.
+- If the data type is categorical: count the frequency of the various values and surface the mode.
+- Pick two numeric variables and surface the relationship (if any) between them by analysing the correlation.
+
+
+Once you have gathered the above statistics – present the information in Reveal.js
+
+
+For those looking to advance quickly:
+- Visualise the above statistics using simple charts in Pandas.
+
+---
+
+Resources:
+-
+
+---
+---
+---
+---
+-----
+
+
 ## Week-3:
 ### Data manipulation with Pandas
 
