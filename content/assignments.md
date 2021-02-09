@@ -4,6 +4,36 @@ date: 2021-01-17T20:27:23-05:00
 draft: false
 ---
 
+## Week-5:
+### Map data | Refine your research topic
+This weeks assignment will be two fold – first, you will be tasked with creating a choropleth map of a single variable within your topic area. You can choose to create a static map using GeoPandas or an interactive map using Folium.
+
+Questions to consider when creating your map:
+
+- What is the distribution of this variable (minimum and maximum values)? And will this look interesting in map form? For example, if the variable is skewed towards a particular values, it may look weird mapped on a choropleth.
+- Does the color palette correctly highlight interesting values in the data?
+- What is the area you want to cover?
+
+The second aspect of this weeks assignment will be to refine your research question and start thinking about a narrative. You should start thinking like a a capital R researcher and structure your project/presentation like a research paper, including:
+
+- Abstract / Overview: Describe your entire project in one paragraph
+- Background  / Context: what is the context behind the research? Why is this interesting?
+- Method: What techniques will you use to complete the study?
+- Results / Findings: What did you discover?
+
+Of course at this stage you will have nothing to say about results and findings, or even a methods. But it will be good practice to start structuring your project and presentation in this format.
+
+---
+
+Resources:
+- [Mapping data](https://www.placedata.net/posts/mapping/) with Python
+
+---
+---
+---
+---
+-----
+
 ## Week-4:
 ### Data analysis with Pandas
 This week's assignment expands on the use of Pandas, requiring you to do a descriptive analysis of data within your chosen research area. By next week's class, you are to find an interesting dataset(s) and ask a series of probing questions to surface basic insights. The output of the analysis is not important at this stage, what is important is getting comfortable with data analysis + Pandas + Python. However, you should summarize your findings in a Reveal.js presentation.
