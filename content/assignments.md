@@ -6,26 +6,27 @@ draft: false
 
 ## Week-5:
 ### Map data | Refine your research topic
-This weeks assignment will be two fold – first, you will be tasked with creating a choropleth map of a single variable within your topic area. You can choose to create a static map using GeoPandas or an interactive map using Folium.
+This week's assignment will be two fold – first, you will be tasked with creating a choropleth map of a single variable within your topic area. You can choose to create a static map using GeoPandas or an interactive map using Folium.
 
 Questions to consider when creating your map:
 
-- What is the distribution of this variable (minimum and maximum values)? And will this look interesting in map form? For example, if the variable is skewed towards a particular values, it may look weird mapped on a choropleth.
+- What is the distribution of the data (minimum / maximum values)? And will this look interesting in map form? For example, if the variable is skewed towards a particular value it may look weird as a choropleth.
 - Does the color palette correctly highlight interesting values in the data?
 - What is the area you want to cover?
 
-The second aspect of this weeks assignment will be to refine your research question and start thinking about a narrative. You should start thinking like a a capital R researcher and structure your project/presentation like a research paper, including:
+The second aspect of this week's assignment will be to refine your research question and start thinking about a narrative. You should start thinking like a a capital R researcher and structure your project/presentation like a research paper, including:
 
 - Abstract / Overview: Describe your entire project in one paragraph
 - Background  / Context: what is the context behind the research? Why is this interesting?
 - Method: What techniques will you use to complete the study?
 - Results / Findings: What did you discover?
 
-Of course at this stage you will have nothing to say about results and findings, or even a methods. But it will be good practice to start structuring your project and presentation in this format.
+Of course at this stage you will have nothing to say about results and findings, or even a method. But it will be good practice to start structuring your project and presentation in this format.
 
 ---
 
 Resources:
+
 - [Mapping data](https://www.placedata.net/posts/mapping/) with Python
 
 ---
