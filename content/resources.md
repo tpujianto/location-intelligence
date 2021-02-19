@@ -23,6 +23,14 @@ This is a non-exhaustive list of useful geospatial datasets around the web. Some
 - [NY Times COVID-19 Data](https://github.com/nytimes/covid-19-data)
 - [EU Urban Data Platform](https://urban.jrc.ec.europa.eu/#/en)
 - [Data is Plural Archive](https://dataset-finder.netlify.app/?utm_campaign=Data_Elixir&utm_source=Data_Elixir_318)
+- [Machine Learning Datasets](https://www.datasetlist.com/)
+- [r/datasets](https://www.reddit.com/r/datasets/)
+
+### APIs
+
+- [HERE API](https://developer.here.com/) – geocoding and navigation services
+- [Public APIs](https://github.com/public-apis/public-apis#books) – free APIs for software and web development
+
 
 
 ### Books
