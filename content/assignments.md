@@ -4,6 +4,32 @@ date: 2021-01-17T20:27:23-05:00
 draft: false
 ---
 
+## Final Assignment
+For the final project you are required to collate all of your semesters research into a single, visually compelling narrative. The keyword here is narrative – you should be telling a story with data! Projects can be in the format of a research paper or presentation, but either way they must be heavily illustrative. Including diagrams to convey process, logic, and ideas, alongside charts and maps to reveal results of your analysis. Think about ways to make your line of questioning compelling to a potential reader. Why is this relevant? What surprised? Also, try to focus your project around a single idea.
+
+These are the minimum requirements, feel free to add/rename sections:
+- Compelling Title
+- Abstract / Overview — *what is the project about? What are you trying to uncover?*
+- Methodology — *what data sources are you using? How are you approaching the analysis? Are you using any statistical techniques (regression, clustering, similarity metrics)?*
+- Results — *what did you discover? What is interesting about the results? What did you learn?*
+- Interactive maps and charts
+- Code (pushed to GitHub repo)
+
+PDF format will be excepted, but it is encouraged that you submit your work as a Reveal.js presentation so that any interactive content can exist on the web. Images, charts, and maps should be submitted separately for archiving purposes and abstract.
+
+---
+
+Resources:
+
+- [Envisioning Information](http://okhaos.com/tufte.pdf), Edward Tufte
+- [Making data mean more through storytelling](https://www.youtube.com/watch?v=6xsvGYIxJok), TED talk
+
+---
+---
+---
+---
+-----
+
 ## Week-5:
 ### Map data | Refine your research topic
 This week's assignment will be two fold – first, you will be tasked with creating a choropleth map of a single variable within your topic area. You can choose to create a static map using GeoPandas or an interactive map using Folium.
