@@ -8,6 +8,7 @@ draft: false
 For the final project you are required to collate all of your semesters research into a single, visually compelling narrative. The keyword here is narrative – you should be telling a story with data! Projects can be in the format of a research paper or presentation, but either way they must be heavily illustrative. Including diagrams to convey process, logic, and ideas, alongside charts and maps to reveal results of your analysis. Think about ways to make your line of questioning compelling to a potential reader. Why is this relevant? What surprised? Also, try to focus your project around a single idea.
 
 These are the minimum requirements, feel free to add/rename sections:
+
 - Compelling Title
 - Abstract / Overview — *what is the project about? What are you trying to uncover?*
 - Methodology — *what data sources are you using? How are you approaching the analysis? Are you using any statistical techniques (regression, clustering, similarity metrics)?*
@@ -15,7 +16,7 @@ These are the minimum requirements, feel free to add/rename sections:
 - Interactive maps and charts
 - Code (pushed to GitHub repo)
 
-PDF format will be excepted, but it is encouraged that you submit your work as a Reveal.js presentation so that any interactive content can exist on the web. Images, charts, and maps should be submitted separately for archiving purposes and abstract.
+You can submit your work as a PDF presentation, but it is encouraged you submit your work as a Reveal.js presentation so any interactive content (maps or charts) can exist on the web. Images, charts, and maps should be submitted separately for archiving purposes and the GSAPP Abstract.
 
 ---
 
