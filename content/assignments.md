@@ -23,6 +23,9 @@ You can submit your work as a PDF presentation, but it is encouraged you submit 
 Resources:
 
 - [Envisioning Information](http://okhaos.com/tufte.pdf), Edward Tufte
+- [NYT The True Color of US Elections](https://www.nytimes.com/interactive/2020/09/02/upshot/america-political-spectrum.html)
+- [Forensic Architecture](https://forensic-architecture.org/investigation/nso-groups-breach-of-private-data-with-fleming-a-covid-19-contact-tracing-software), Analysis of the misuse of COVID-19 contact tracing software
+- [NYT Single Family Zoning](https://www.nytimes.com/interactive/2019/06/18/upshot/cities-across-america-question-single-family-zoning.html)
 - [Making data mean more through storytelling](https://www.youtube.com/watch?v=6xsvGYIxJok), TED talk
 
 ---
