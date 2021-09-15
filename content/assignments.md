@@ -1,173 +1,33 @@
 ---
 title: "Assignments"
-date: 2021-01-17T20:27:23-05:00
+date: 2021-09-14T20:27:23-05:00
 draft: false
 ---
 
-## Final Assignment
-For the final project you are required to collate all of your semesters research into a single, visually compelling narrative. The keyword here is narrative – you should be telling a story with data! Projects can be in the format of a research paper or presentation, but either way they must be heavily illustrative. Including diagrams to convey process, logic, and ideas, alongside charts and maps to reveal results of your analysis. Think about ways to make your line of questioning compelling to a potential reader. Why is this relevant? What surprised? Also, try to focus your project around a single idea.
-
-These are the minimum requirements, feel free to add/rename sections:
-
-- Compelling Title
-- Abstract / Overview — *what is the project about? What are you trying to uncover?*
-- Methodology — *what data sources are you using? How are you approaching the analysis? Are you using any statistical techniques (regression, clustering, similarity metrics)?*
-- Results — *what did you discover? What is interesting about the results? What did you learn?*
-- Interactive maps and charts
-- Code (pushed to GitHub repo)
-
-You can submit your work as a PDF presentation, but it is encouraged you submit your work as a Reveal.js presentation so any interactive content (maps or charts) can exist on the web. Images, charts, and maps should be submitted separately for archiving purposes and the GSAPP Abstract.
-
----
-
-Resources:
-
-- [Envisioning Information](http://okhaos.com/tufte.pdf), Edward Tufte
-- [NYT The True Color of US Elections](https://www.nytimes.com/interactive/2020/09/02/upshot/america-political-spectrum.html)
-- [Forensic Architecture](https://forensic-architecture.org/investigation/nso-groups-breach-of-private-data-with-fleming-a-covid-19-contact-tracing-software), Analysis of the misuse of COVID-19 contact tracing software
-- [NYT Single Family Zoning](https://www.nytimes.com/interactive/2019/06/18/upshot/cities-across-america-question-single-family-zoning.html)
-- [Making data mean more through storytelling](https://www.youtube.com/watch?v=6xsvGYIxJok), TED talk
-
----
----
----
----
------
-
-## Week-5:
-### Map data | Refine your research topic
-This week's assignment will be two fold – first, you will be tasked with creating a choropleth map of a single variable within your topic area. You can choose to create a static map using GeoPandas or an interactive map using Folium.
-
-Questions to consider when creating your map:
-
-- What is the distribution of the data (minimum / maximum values)? And will this look interesting in map form? For example, if the variable is skewed towards a particular value it may look weird as a choropleth.
-- Does the color palette correctly highlight interesting values in the data?
-- What is the area you want to cover?
-
-The second aspect of this week's assignment will be to refine your research question and start thinking about a narrative. You should start thinking like a a capital R researcher and structure your project/presentation like a research paper, including:
-
-- Abstract / Overview: Describe your entire project in one paragraph
-- Background  / Context: what is the context behind the research? Why is this interesting?
-- Method: What techniques will you use to complete the study?
-- Results / Findings: What did you discover?
-
-Of course at this stage you will have nothing to say about results and findings, or even a method. But it will be good practice to start structuring your project and presentation in this format.
-
----
-
-Resources:
-
-- [Mapping data](https://www.placedata.net/posts/mapping/) with Python
-
----
----
----
----
------
-
-## Week-4:
-### Data analysis with Pandas
-This week's assignment expands on the use of Pandas, requiring you to do a descriptive analysis of data within your chosen research area. By next week's class, you are to find an interesting dataset(s) and ask a series of probing questions to surface basic insights. The output of the analysis is not important at this stage, what is important is getting comfortable with data analysis + Pandas + Python. However, you should summarize your findings in a Reveal.js presentation.
-
-Questions to ask yourself when choosing your dataset:
-
-- How does this relate to my topic?
-- Is this data trustworthy? Is it meaningful?
-- Is it at the right granularity?
-- Is the dataset structured in a useful format?
-
-With your chosen dataset, you are to pick two or more variables and depending on the *data type* of the variables answer the following questions:
-
-- If the data type is numeric: surface the median, minimum, maximum, and standard deviation of the variable.
-- If the data type is categorical: count the frequency of the various values and surface the mode.
-- Pick two numeric variables and surface the relationship (if any) between them by analysing the correlation.
-
-
-Once you have gathered the above statistics – present the information in Reveal.js
-
-
-For those looking to advance quickly:
-- Visualise the above statistics using simple charts in Pandas.
-
----
-
-Resources:
--
-
----
----
----
----
------
-
-
-## Week-3:
-### Data manipulation with Pandas
-
-#### Purpose
-The goal of this assignment is to get you coding in Python and familiar with the Pandas library. You are tasked with locating a dataset on your chosen research topic and load the data in Python using Pandas. Once the data is loaded into Python you must describe the data using basic statistics such as averages, medians, summing, etc. For example, if your topic is NYC housing, then you could download the building data from the NYC Urban Planning department (PLUTO), load it into Pandas and find out the average building height in NYC or the total square footage in Manhattan.
-
-There are many interesting datasets online and I encourage you to search the internet to locate something interesting. Most research is only as good as the available data.
-
----
-
-Resources:
-- You may find the datasets linked in the [resource](https://www.placedata.net/resources/) section of this site useful.
-- Refer to the intro [tutorials](https://www.placedata.net/posts/) or [notebooks](https://github.com/carlobailey/location-intelligence/tree/main/_notebooks) on Python, Pandas, and Data.
-
----
----
----
----
------
-
-
-## Week-2:
-### Define a research agenda and create a Reveal.js presentation
-
-
-#### Purpose
-The purpose of this assignment is to get you thinking about a research agenda for your final project. One of the hardest things about research and data science is finding the right questions to ask with data. You can have all the data in the world, with unlimited time and resources, but if you do not know how to ask interesting questions, you will not be able to produce novel insights, actionable findings or a new body of knowledge. In this assignment you will be tasked with coming up with a research question(s) that you want to answer over the next few weeks/months, gather existing research on the topic, and present it with Reveal.js.
-
-[Reveal.js](https://revealjs.com/) is an open-source presentation framework that enables you to create interactive, highly customizable presentations on the web. Alongside doing visualization and analysis in Python, you will be consolidating your efforts this semester in Reveal.js. This assignment aims to get you familiar with the framework.
-
-#### Task
-Define a broad topic or area of interest related to the built environment or location. For example property ownership, zoning, energy usage, retailers, tax credits, etc. Why are you interested in this topic? Narrow it down further to an area you wish to explore. What are the ways you think this topic affects the built environment and location? Articulate your proposed research question, and find 2-3 examples of academic or industry research exploring a similar issue.
-
-
-#### Example
-
-*Broad Topic*
-- Real Estate Financing
-
-*Narrow Area*
-- Public Infrastructure and Land Value
-
-*Research Question*
-- How does the development of public infrastructure projects affect house prices?
-
-*Similar research*
-
-- [A Smart Commons](https://provocations.darkmatterlabs.org/a-smart-commons-528f4e53cec2)
-
----
-
-Resources:
-- [Google Scholar](https://scholar.google.com/) research portal to help you find similar research
-- [arXiv](https://arxiv.org/) *open* research portal to help you find similar research
-- [How to formulate a research question](https://ocw.mit.edu/courses/comparative-media-studies-writing/21w-035-science-writing-and-new-media-communicating-science-to-the-public-fall-2016/communication-experiments/sessions-9-21/formulating-a-research-question/)
-
----
----
----
----
------
-
-
-
 ## Week-1
+Below are a series of possible research areas for you to focus on throughout the semester. Note, these are only guides, and can be extended or rethought as necessary:
 
-This week is a mini-assignment to get set up with all the necessary tech that we'll use throughout the semester
+### Urban Morphology:
+How does the width of a neighborhood’s streets, the number of intersections, or the traffic volume affect environmental, economic or social aspects of cities? Urban morphology is the study of urban form, the main physical elements that structure and shape cities such as streets, squares, blocks, plots, and buildings, to answer such questions. Renowned Urban Design professor, Roger Trancik, breaks down the subject of urban morphology into three major subcategories: 1) figure ground, the study of built and unbuilt form, 2) linkage, the study of street and road networks, and 3) place, the study of settlement patterns and urban function. Analysing urban form within these frameworks alongside the use of big data can reveal interesting patterns about places. The study of Urban Morphology has been used to analyse election outcomes like the relationship between voting patterns and urban density. Or solely looking at the similarities and differences between places based on things like the gridedness of streets.
+
+### Cultural Composition:
+What does the type of retail establishments tell us about a given neighborhood? What does the distribution of services reveal about urban inequality? Can Airbnb prices tell us anything about neighborhood change or gentrification? These are just a few of the possible questions one could ask by looking at alternative or cultural datasets. When we think about architecture and the built environment our default is to think in terms of the physical characteristics of space and place. But the people that occupy the place and the subsequent cultural inclinations of its inhabitants can reveal hidden patterns that can inform design decisions and function. Looking at a place through a cultural lens (e.g. music, food, consumption, etc) is a rich source of big data and often overlooked in the AEC industry. Examples of urban studies looking at culture have revealed the similarities of places based on the types of artists that play music within them. And have even been early signals for gentrification by looking at the types of complaints people make about local services.
+
+### Health & Environment:
+The heath and the environment is a rich area for big data studies. From the relationship between tree cover and income, to the influence of housing density on COVID outcomes, reveals much about the uneven development of cities and the spaces we inhabit. This research area asks one to consider not only the pace and impact of climate change, but how the environment relates to other complex systems like socio economic patterns and even urban morphology. Examples of recent innovative studies looked at whether we can predict the energy use of buildings given its physical characteristics and positioning in the city, studying the sewage system to understand neighborhood health, or quantifying the optimal level of diversity in vegetation.
+
+
+For next session, pick a research areas to focus on and develop a series of questions you’d like to answer through your semester project. The research and questions should be highly specific and grounded in real world problems. The more specific the idea, the easier it will be to think about possible datasets, quantitative techniques, and a subsequent narrative. Generally, data, analytics and machine learning fall into one of four categories: descriptive, diagnostic, predictive and prescriptive. You should think of your project as falling into one of these areas.
+
+- Descriptive: where you utilize data to describe a given phenomenon
+- Diagnostic: where data is used to describe why something happened
+- Predictive: where data is used to predict what will happen
+- Prescriptive: where data is used to make something happen
+
+For the next session you should present 3 slides stating a series of research questions, a statement (diagrammatic or illustrative) saying why this is important, and links to potential data sources you will use.
+
+
+Also by next session, ensure you have Python installed on your machine:
 
 - Install Python with [Anaconda](https://www.anaconda.com/products/individual) if using windows
 - Install Python with [Homebrew](https://realpython.com/installing-python/#how-to-install-from-homebrew) if using a Mac
